@@ -180,7 +180,7 @@ def train():
                     voxel_input: vi,
                     ground_truth: gt,
                     binary_mask: bm,
-                    training_bool: False
+                    training_bool: True
                 }
 				test_loss_val, test_summ = sess.run([loss, test_loss_summ], feed_dict=feed_dict)
 				test_writer.add_summary(test_summ, i)
